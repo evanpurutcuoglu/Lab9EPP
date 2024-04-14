@@ -14,6 +14,7 @@ def encode(x):
 def decode(y):
     i = 0
     y = list(y)
+    l = len(y)
     while i < len(y):
         if int(y[i]) < 3:
             y[i] = int(y[i]) + 7
