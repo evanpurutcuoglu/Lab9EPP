@@ -8,7 +8,7 @@ def encode(x):
     x = str(x)
     y = ""
     for num in x:
-        y += (str(int(num)+33 % 10))
+        y += (str(int(num)+3 % 10))
     return y
 
 def decode(y):
