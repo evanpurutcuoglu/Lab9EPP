@@ -11,12 +11,23 @@ def encode(x):
         y += (str(int(num)+33 % 10))
     return y
 
-def decode(x):
-    y = ""
+def decode(y):
+    i = 0
+    y = list(y)
+    while i < len(y):
+        if int(y[i]) < 3:
+            y[i] = int(y[i]) + 7
+            i += 1
+        else:
+            y[i] = int(y[i]) - 3
+            i += 1
+    z = ''
+    i = 0
+    while i < l:
+        z += str(y[i])
+        i += 1
 
-    # just finish this function and everything else will work. (you shouldn't have to change anything outside of this function.) 
-
-    return y
+    return (z)
 
 def main():
 
